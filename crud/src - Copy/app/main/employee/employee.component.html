@@ -1,0 +1,26 @@
+<form [formGroup]="empService.form" class="myForm">
+    <mat-grid-list cols="2" rowHeight="400px">
+     <mat-grid-tile>
+        <div class="empControls">
+            <input type="hidden" formControlName="$key">
+            <mat-form-field appearance="outline" color="warn">
+                <mat-label>Full Name:</mat-label>
+                <input matInput formControlName="fullName">
+            </mat-form-field>
+            <mat-form-field appearance="outline" color="warn">
+                <mat-label>Email:</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline" color="warn">
+                <mat-label>Mobile:</mat-label>
+                <input matInput formControlName="mobile">
+            </mat-form-field>
+            <mat-form-field appearance="outline" color="warn">
+                <mat-label>City Name:</mat-label>
+                <input matInput formControlName="city">
+            </mat-form-field>
+        </div>
+     </mat-grid-tile>
+     <mat-grid-tile>2</mat-grid-tile>
+    </mat-grid-list>
+</form>
